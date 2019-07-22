@@ -27,8 +27,8 @@ window.onload = function() {
 	        if(pos[n] >= end[n]) {
 				endedall4 += 1;
 	        }
-			var deltapos = Math.pow((pos[n]/end[n])-0.25,2);
-			if(deltapos < 1/10) deltapos = 1/10;
+			var deltapos = Math.pow((pos[n]/end[n])-0.5,2);
+			if(deltapos < 1/17) deltapos = 1/17;
 			pos[n] += end[n]/(deltapos*700);
 		}
 		if(endedall4 == 4) clearInterval(t);
