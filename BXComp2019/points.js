@@ -2,7 +2,7 @@
 window.onload = function() {
     //our box element
     var ships = document.getElementsByClassName('ship');
-    var t = setInterval(move, 10);
+    var t = setInterval(delay, 500);
 
 	var height = 50;
 	var pos = [0, 0, 0, 0];
@@ -11,6 +11,12 @@ window.onload = function() {
 	for(var n = 0; n < ships.length; n++)
 	{
 		ships[n].style.top = (n * height)+"px";
+	}
+
+	function delay()
+	{
+		clearInterval(t);
+		t = setInterval(move, 10);
 	}
 
     function move() {
