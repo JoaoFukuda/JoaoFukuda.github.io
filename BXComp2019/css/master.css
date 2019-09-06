@@ -1,12 +1,17 @@
 #container {
-    width: 200px;
-    height: 200px;
-    background: magenta;
+    width: 1px;
+    height: 1px;
     position: relative;
 }
-.ship {
+#container .ship {
     width: 50px;
     height: 50px;
-    background: blue;
-    position: absolute;
+    position: relative;
+}
+#container .ship img{
+	position: absolute;
+}
+
+body {
+	background: #202020;
 }
